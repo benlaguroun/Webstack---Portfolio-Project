@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; // Updated import
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { AuthProvider } from './context/AuthContext';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root')); // Updated to use createRoot
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <AuthProvider>
@@ -15,6 +16,5 @@ ReactDOM.render(
         </CartProvider>
       </AuthProvider>
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

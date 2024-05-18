@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -8,10 +8,11 @@ import Register from './pages/Register';
 import Products from './pages/Products';
 import Cart from './pages/Cart';
 import OrderHistory from './pages/OrderHistory';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,10 +20,13 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/products" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/order-history" element={<OrderHistory />} />
+        <Route
+          path="/order-history"
+          element={<ProtectedRoute element={<OrderHistory />} />}
+        />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
