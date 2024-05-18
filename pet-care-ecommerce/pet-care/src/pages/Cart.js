@@ -10,6 +10,7 @@ const Cart = () => {
 
   const handlePlaceOrder = () => {
     saveOrder();
+    console.log('Order placed:', JSON.parse(localStorage.getItem('orders')));
     alert('Order placed successfully!');
   };
 
