@@ -5,27 +5,46 @@ const CartContext = createContext();
 const cartReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_TO_CART':
-      // Check if the item is already in the cart
-      const itemExists = state.find(item => item.id === action.payload.id);
+      const itemExists = state.cart.find(item => item.id === action.payload.id);
       if (itemExists) {
-        return state.map(item =>
-          item.id === action.payload.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        );
+        return {
+          ...state,
+          cart: state.cart.map(item =>
+            item.id === action.payload.id
+              ? { ...item, quantity: item.quantity + 1 }
+              : item
+          )
+        };
       }
-      return [...state, { ...action.payload, quantity: 1 }];
+      return {
+        ...state,
+        cart: [...state.cart, { ...action.payload, quantity: 1 }]
+      };
     case 'REMOVE_FROM_CART':
-      return state.filter(item => item.id !== action.payload.id);
+      return {
+        ...state,
+        cart: state.cart.filter(item => item.id !== action.payload.id)
+      };
     case 'CLEAR_CART':
-      return [];
+      return { ...state, cart: [] };
+    case 'SAVE_ORDER':
+      const newOrder = {
+        id: new Date().getTime(),
+        items: [...state.cart],
+        date: new Date().toISOString()
+      };
+      const updatedOrders = [...state.orders, newOrder];
+      localStorage.setItem('orders', JSON.stringify(updatedOrders));
+      return { ...state, cart: [], orders: updatedOrders };
+    case 'LOAD_ORDERS':
+      return { ...state, orders: action.payload };
     default:
       return state;
   }
 };
 
 export const CartProvider = ({ children }) => {
-  const [cart, dispatch] = useReducer(cartReducer, []);
+  const [state, dispatch] = useReducer(cartReducer, { cart: [], orders: [] });
 
   const addToCart = product => {
     dispatch({ type: 'ADD_TO_CART', payload: product });
@@ -39,8 +58,17 @@ export const CartProvider = ({ children }) => {
     dispatch({ type: 'CLEAR_CART' });
   };
 
+  const saveOrder = () => {
+    dispatch({ type: 'SAVE_ORDER' });
+  };
+
+  const loadOrders = () => {
+    const orders = JSON.parse(localStorage.getItem('orders')) || [];
+    dispatch({ type: 'LOAD_ORDERS', payload: orders });
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
+    <CartContext.Provider value={{ cart: state.cart, orders: state.orders, addToCart, removeFromCart, clearCart, saveOrder, loadOrders }}>
       {children}
     </CartContext.Provider>
   );
