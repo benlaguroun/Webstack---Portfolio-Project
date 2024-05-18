@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useContext } from 'react';
+import React, { createContext, useReducer, useContext, useEffect } from 'react';
 
 const CartContext = createContext();
 
@@ -35,6 +35,7 @@ const cartReducer = (state, action) => {
       };
       const updatedOrders = [...state.orders, newOrder];
       localStorage.setItem('orders', JSON.stringify(updatedOrders));
+      console.log('Orders saved to localStorage:', updatedOrders);
       return { ...state, cart: [], orders: updatedOrders };
     case 'LOAD_ORDERS':
       return { ...state, orders: action.payload };
@@ -45,6 +46,12 @@ const cartReducer = (state, action) => {
 
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, { cart: [], orders: [] });
+
+  useEffect(() => {
+    const storedOrders = JSON.parse(localStorage.getItem('orders')) || [];
+    dispatch({ type: 'LOAD_ORDERS', payload: storedOrders });
+    console.log('Loaded orders from localStorage:', storedOrders);
+  }, []);
 
   const addToCart = product => {
     dispatch({ type: 'ADD_TO_CART', payload: product });
@@ -65,6 +72,7 @@ export const CartProvider = ({ children }) => {
   const loadOrders = () => {
     const orders = JSON.parse(localStorage.getItem('orders')) || [];
     dispatch({ type: 'LOAD_ORDERS', payload: orders });
+    console.log('Orders loaded:', orders);
   };
 
   return (
