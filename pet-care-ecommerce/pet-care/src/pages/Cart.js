@@ -2,10 +2,15 @@ import React from 'react';
 import { useCart } from '../context/CartContext';
 
 const Cart = () => {
-  const { cart, removeFromCart, clearCart } = useCart();
+  const { cart, removeFromCart, clearCart, saveOrder } = useCart();
 
   const getTotalPrice = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+  };
+
+  const handlePlaceOrder = () => {
+    saveOrder();
+    alert('Order placed successfully!');
   };
 
   return (
@@ -28,6 +33,7 @@ const Cart = () => {
           ))}
           <h2>Total: ${getTotalPrice()}</h2>
           <button onClick={clearCart}>Clear Cart</button>
+          <button onClick={handlePlaceOrder}>Place Order</button>
         </div>
       )}
     </div>
