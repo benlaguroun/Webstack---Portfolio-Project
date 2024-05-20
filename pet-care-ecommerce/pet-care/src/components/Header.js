@@ -12,9 +12,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="/path/to/logo.png" alt="Logo" />
+        <img src="./images/logo.png" alt="Logo" />
       </div>
-      <input type="checkbox" id="menu-toggle" checked={menuOpen} onChange={toggleMenu} />
+      
       <label htmlFor="menu-toggle" className="menu-icon" onClick={toggleMenu}>
         <span className="navicon"></span>
       </label>
