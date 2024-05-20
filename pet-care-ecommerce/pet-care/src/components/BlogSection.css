@@ -1,7 +1,14 @@
 /* src/components/BlogSection.css */
 .blog-section {
   padding: 50px 20px;
+  background-color: #2c2c2c; /* Dark background color */
+  color: #ffffff; /* White text color */
   text-align: center;
+}
+
+.blog-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 
 .blog-posts {
