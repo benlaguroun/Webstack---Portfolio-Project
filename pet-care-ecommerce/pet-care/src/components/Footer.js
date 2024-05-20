@@ -20,9 +20,9 @@ const Footer = () => (
         <div className="col-md-4">
           <h5>Follow Us</h5>
           <ul className="list-unstyled">
-            <li><a href="#" className="text-white">Facebook</a></li>
-            <li><a href="#" className="text-white">Twitter</a></li>
-            <li><a href="#" className="text-white">Instagram</a></li>
+            <li><button className="link-button" onClick={() => window.location.href='#'}>Facebook</button></li>
+            <li><button className="link-button" onClick={() => window.location.href='#'}>Twitter</button></li>
+            <li><button className="link-button" onClick={() => window.location.href='#'}>Instagram</button></li>
           </ul>
         </div>
       </div>
@@ -34,4 +34,3 @@ const Footer = () => (
 );
 
 export default Footer;
-
