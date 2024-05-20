@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className="header">
       <div className="logo">
         <img src="/path/to/logo.png" alt="Logo" />
       </div>
@@ -19,15 +19,16 @@ const Header = () => {
         <span className="navicon"></span>
       </label>
       <nav className={menuOpen ? 'open' : ''}>
-        <Link to="/">Home</Link>
-        <Link to="/products">Products</Link>
-        <Link to="/cart">Cart</Link>
-        <Link to="/order-history">Order History</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link>
+        <Link to="/cart" onClick={() => setMenuOpen(false)}>Cart</Link>
+        <Link to="/order-history" onClick={() => setMenuOpen(false)}>Order History</Link>
+        <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
+        <Link to="/register" onClick={() => setMenuOpen(false)}>Register</Link>
       </nav>
     </header>
   );
 };
 
 export default Header;
+
