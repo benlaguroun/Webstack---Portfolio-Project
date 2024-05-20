@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import ProductList from '../components/ProductList';
 import BlogSection from '../components/BlogSection';
 import './Home.css';
+import AboutSection from '../components/AboutSection';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Hero />
         <ProductList />
         <BlogSection />
+        <AboutSection />
       </div>
      
     </div>
