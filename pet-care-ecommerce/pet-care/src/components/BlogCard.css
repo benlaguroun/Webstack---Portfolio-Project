@@ -1,34 +1,52 @@
 /* src/components/BlogCard.css */
 .blog-card {
-  border: 1px solid #ccc;
-  padding: 16px;
+  background-color: #3a3a3a; /* Slightly lighter background for cards */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
   margin: 16px;
   text-align: center;
   flex: 1 1 calc(33.333% - 32px); /* Adjust the width for larger screens */
+  max-width: 300px; /* Add a maximum width to prevent cards from getting too large */
   box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.blog-card:hover {
+  transform: translateY(-10px); /* Lift the card slightly on hover */
 }
 
 .blog-card img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
 }
 
 .blog-card h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin: 0.5em 0;
+  color: #ffffff; /* White text color */
 }
 
 .blog-card p {
   margin: 0.5em 0;
+  color: #d3d3d3; /* Lighter text color for contrast */
 }
 
 .blog-card .read-more {
-  color: #4CAF50;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
   text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .blog-card .read-more:hover {
-  text-decoration: underline;
+  background-color: #ff3b2f;
 }
 
 /* Responsive styles */
@@ -43,3 +61,4 @@
     flex: 1 1 calc(100% - 32px); /* Adjust the width for small screens */
   }
 }
+
