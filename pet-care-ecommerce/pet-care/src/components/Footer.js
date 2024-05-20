@@ -1,30 +1,37 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-section">
-          <h2>About Us</h2>
-          <p>We provide the best products for your pets with love and care.</p>
+const Footer = () => (
+  <footer className="footer bg-dark text-white py-4">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-4">
+          <h5>About Us</h5>
+          <p>We provide the best pet care services in the city. Your pet's happiness is our priority.</p>
         </div>
-        <div className="footer-section">
-          <h2>Quick Links</h2>
-          <ul>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/about">About Us</a></li>
+        <div className="col-md-4">
+          <h5>Contact Us</h5>
+          <ul className="list-unstyled">
+            <li>Email: info@petcare.com</li>
+            <li>Phone: +123 456 7890</li>
+            <li>Address: 123 Pet Street, Pet City</li>
           </ul>
         </div>
-        <div className="footer-section">
-          <h2>Contact Us</h2>
-          <p>Email: support@petio.com</p>
-          <p>Phone: +123 456 7890</p>
+        <div className="col-md-4">
+          <h5>Follow Us</h5>
+          <ul className="list-unstyled">
+            <li><a href="#" className="text-white">Facebook</a></li>
+            <li><a href="#" className="text-white">Twitter</a></li>
+            <li><a href="#" className="text-white">Instagram</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-  );
-};
+      <div className="text-center mt-4">
+        <p>&copy; {new Date().getFullYear()} Pet Care. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+);
 
 export default Footer;
+
