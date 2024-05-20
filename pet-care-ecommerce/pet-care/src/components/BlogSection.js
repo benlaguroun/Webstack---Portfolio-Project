@@ -20,13 +20,19 @@ const BlogSection = () => {
 
   return (
     <section className="blog-section">
-      <h2>From Our Blog</h2>
-      <div className="blog-posts">
-        {posts.length > 0 ? (
-          posts.map((post) => <BlogCard key={post.id} post={post} />)
-        ) : (
-          <p>No blog posts available.</p>
-        )}
+      <div className="container">
+        <h2 className="section-title">From Our Blog</h2>
+        <div className="row">
+          {posts.length > 0 ? (
+            posts.map((post) => (
+              <div className="col-md-4" key={post.id}>
+                <BlogCard post={post} />
+              </div>
+            ))
+          ) : (
+            <p className="text-center text-light">No blog posts available.</p>
+          )}
+        </div>
       </div>
     </section>
   );
