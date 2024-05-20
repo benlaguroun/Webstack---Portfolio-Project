@@ -9,7 +9,7 @@ import Products from './pages/Products';
 import Cart from './pages/Cart';
 import OrderHistory from './pages/OrderHistory';
 import ProtectedRoute from './components/ProtectedRoute';
-
+import './App.css'
 function App() {
   return (
     <>
@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-

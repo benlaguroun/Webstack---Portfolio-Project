@@ -1,0 +1,11 @@
+/* src/components/BlogSection.css */
+.blog-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
