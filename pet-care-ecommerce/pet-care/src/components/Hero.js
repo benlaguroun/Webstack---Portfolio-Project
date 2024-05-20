@@ -4,7 +4,7 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div className="hero">
-      <h1>Welcome to Petio</h1>
+      <h1>Welcome to Pet care</h1>
       <p>Get the best products for your beloved pets!</p>
       <button className="hero-button">Shop Now</button>
     </div>
