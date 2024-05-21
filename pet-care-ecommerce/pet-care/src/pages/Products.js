@@ -1,8 +1,9 @@
+// src/pages/Products.js
 import React from 'react';
 import products from '../data/products';
 import ProductCard from '../components/ProductCard';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './Products.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import './Products.css'; // Custom CSS for additional styling
 
 const Products = () => {
   return (
@@ -16,7 +17,7 @@ const Products = () => {
         ))}
       </div>
     </div>
-
+  );
 };
 
 export default Products;
