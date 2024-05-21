@@ -1,26 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import './ProductList.css';
 import ProductCard from './ProductCard';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './ProductList.css';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/products')
+    fetch('/db.json')
       .then((response) => response.json())
-      .then((data) => setProducts(data));
+      .then((data) => setProducts(data.products))
+      .catch((error) => console.error('Fetch error:', error));
   }, []);
 
   return (
     <section className="product-list-section">
-      <h2>Our Products</h2>
-      <div className="product-list">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+      <div className="container">
+        <h2>Our Products</h2>
+        <div className="row">
+          {products.map((product) => (
+            <div key={product.id} className="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <ProductCard product={product} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
 export default ProductList;
+
