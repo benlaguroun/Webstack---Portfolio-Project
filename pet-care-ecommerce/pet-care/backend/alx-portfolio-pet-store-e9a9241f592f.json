@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "alx-portfolio-pet-store",
+  "private_key_id": "e9a9241f592f4affeb541c5918e325ccc3e7fc18",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCZDGJIX6sowgzk\nYry0hL051AXCC5cCAHn3C+OAjmSF7G3qe7eI1ho16ILXK2T4nMXMc+9wjJGzB9tM\nuSUNjm0yytnbmfJQOoF2MM7kQE2kGs2BsfdHQhHk0e56e+09uV+OGmy7UALTIifP\nXiUgMxH4T9pjbh0MH9lbEGJwBzgoqHFvW72rNFHAsovR7qXbOx7C13H9vnaRWqr7\nEGBQmeOnNuYvBEkbZmhvCQsK+ygP5bQZJxDp/PID4BZm5Wp97bDTtjh/5vnlhySV\nVw6Z1cbCjscrSo+NJye7NhFKuKqJwBw3ZdJlmQyFg8zgwd4rnsOxYqVlUzMTaPDf\nPnIM+6czAgMBAAECggEAI9eWnMRq3Ry00DefYddESWqx/oOgVcOuzIBoQw8V05dP\nFn7quI0LjlxpZ+KtvttYJ01vYbhJ1tecMBeb6dTVFfQTmS4wZUGOWBOOID4+8JOm\nVR1Mf8+lSSUw6FZldPMYwbrGhAd04eU51YKCx0uuhayNxINhIhnDWWQ46WuHZ13O\nfoNukKkhvEDL0wa/PGWmnuT932gr+57SMZG/MrxH7g2GjbsdIIfrMMQ1dwtMZlza\n46rcun9HrpuADXzWuwa9cHhjGkPK7He27n+1vpBeqQFuYIRB+64BYRPMJIqGZ2xs\nz/o19FmOwI0J8zAgT72JO0gqCUqrOpWA4JMx/8924QKBgQDQLT3zWAyYNK4ZSi/5\nwXGHBSPFO0+MRF3RY/gmZ8xevGkkOjanKrvHGG0EAT2ijSoITSEzkt3BR5tuDtcK\n7dQderZFGPPCzxrxkmzOMw6qR1WhMPSPhuXPfHDwk2tv7tFN+LkYqWwVIToLmhvQ\nQu7dm+7wipGLY30z+LHVQYqhNwKBgQC8NRL2wgv/HI4FLl2PBo7DXbMx7G6XgZUB\nWR0mjYpJ9zBss7mAp0InO0PJvGaHjR7LWKMMJ3wGzfZaIhDWl2oY7o2JAhb05fDY\noyEoNhrBlmBSlIu71sBtJLrmQ8RW7Z3wQ8L6NZyrKemjYdXVVWhtPg95DNm7WSyY\n+KD8SS6X5QKBgQCBzoQflZqc2dRpXpIVuSJyH6lTVY1fmE2rwBs+z2Bm/jLNbSMh\nD4txNPDdG2z0S/OWo4l9YCm4WE85zDUY0n1+OEMpSMrOgVd6pGQGG14cnUhur1j/\nmgz4WM8Po8zNSevnI50/HH2Rm1tXWqvXK7VIJ/BQuwbQFKRAYOV6ZVjs9wKBgQCN\nbpDmsCHVvz6WdCZIkdP8ylAcByGAZxdzYOVAEINIXCKevVx8arSSyL2DPzoJSSpI\nAz7bplxUvLgROaJPsI9BVxszR0e7F4SrN8N19Vqb+YY+6HQtXw9RtZVh7rD/5iaW\n5EUEQ/+MvL1fUukfHMSRu15jSB3i5PtXpRdNHy2NZQKBgQCfDleRMBhuVsRynh6l\nqAnvF4bRLX2+aKOn7TnFWi8GTeczErQZo/IGe+KnyOt90qBtV5O/pxpEagzG4AT1\nyEnCVX03Ins/8o2E7VQlaqP9rmOnfcvKI1c6WC14b0XZlIp6i3myW+GhXFayP31b\nQjj8WXa5QTbRI3lF5wbkheE24w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "alx-pet-care@alx-portfolio-pet-store.iam.gserviceaccount.com",
+  "client_id": "103512240265739220636",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alx-pet-care%40alx-portfolio-pet-store.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

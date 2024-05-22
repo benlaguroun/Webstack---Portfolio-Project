@@ -1,3 +1,4 @@
+// src/context/CartContext.js
 import React, { createContext, useReducer, useContext, useEffect } from 'react';
 
 const CartContext = createContext();
@@ -85,4 +86,3 @@ export const CartProvider = ({ children }) => {
 export const useCart = () => {
   return useContext(CartContext);
 };
-

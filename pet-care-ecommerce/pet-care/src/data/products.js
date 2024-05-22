@@ -4,7 +4,7 @@ const products = [
     name: "Cat Food",
     description: "High-quality cat food for your feline friend.",
     price: 20.99,
-    image: "path_to_image/cat_food.jpg"
+    image: "../image/cat_food.jpg"
   },
   {
     id: 2,

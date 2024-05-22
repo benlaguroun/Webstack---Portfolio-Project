@@ -1,18 +1,19 @@
+// src/pages/Cart.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import './Cart.css';
 
 const Cart = () => {
-  const { cart, removeFromCart, clearCart, saveOrder } = useCart();
+  const { cart, removeFromCart, clearCart } = useCart();
+  const navigate = useNavigate();
 
   const getTotalPrice = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
-  const handlePlaceOrder = () => {
-    saveOrder();
-    console.log('Order placed:', JSON.parse(localStorage.getItem('orders')));
-    alert('Order placed successfully!');
+  const handleCheckout = () => {
+    navigate('/checkout');
   };
 
   return (
@@ -38,7 +39,7 @@ const Cart = () => {
           <h2>Total: ${getTotalPrice()}</h2>
           <div className="text-center">
             <button className="btn btn-secondary mr-2" onClick={clearCart}>Clear Cart</button>
-            <button className="btn btn-primary" onClick={handlePlaceOrder}>Place Order</button>
+            <button className="btn btn-primary" onClick={handleCheckout}>Place Order</button>
           </div>
         </div>
       )}
