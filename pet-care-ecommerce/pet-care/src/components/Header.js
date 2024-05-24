@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="./images/logo.png" alt="Logo" />
+        <img src="../images/logo.png" alt="Logo" />
       </div>
       
       <label htmlFor="menu-toggle" className="menu-icon" onClick={toggleMenu}>
