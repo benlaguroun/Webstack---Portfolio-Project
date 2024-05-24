@@ -16,7 +16,7 @@ const ProductList = () => {
   return (
     <section className="product-list-section">
       <div className="container">
-        <h2>Our Products</h2>
+        <h2>Best Selling</h2>
         <div className="row">
           {products.map((product) => (
             <div key={product.id} className="col-sm-6 col-md-4 col-lg-3 mb-4">
