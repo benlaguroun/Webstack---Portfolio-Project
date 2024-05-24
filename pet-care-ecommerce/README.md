@@ -79,6 +79,6 @@ This project is licensed under the MIT License.
 
 ## Acknowledgements
 
-This project was developed as a final project for a school curriculum.
+This project was developed as a final project for a school curriculum ALX.
 
 
