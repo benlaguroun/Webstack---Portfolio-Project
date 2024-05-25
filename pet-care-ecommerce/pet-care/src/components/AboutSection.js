@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import './AboutSection.css';
 
 const AboutSection = () => {
@@ -14,9 +14,7 @@ const AboutSection = () => {
               Our mission is to provide the best quality products for your beloved pets. Whether you have a dog, cat,
               bird, or any other pet, we have something for you. Thank you for choosing us for your pet care needs.
             </p>
-          </div>
-          <div className="col-lg-6">
-            <img src="path-to-your-about-image.jpg" alt="About Us" className="img-fluid rounded" />
+            <Link to="/more-about-us" className="btn btn-primary">Read More</Link> {/* Add the button */} 
           </div>
         </div>
       </div>
@@ -25,4 +23,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-

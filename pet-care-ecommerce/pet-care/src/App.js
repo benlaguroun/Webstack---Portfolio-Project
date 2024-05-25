@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -11,8 +10,8 @@ import Cart from './pages/Cart';
 import OrderHistory from './pages/OrderHistory';
 import Checkout from './pages/Checkout';
 import ProtectedRoute from './components/ProtectedRoute';
+import MoreAboutUs from './components/MoreAboutUs';
 import './App.css';
-
 
 function App() {
   return (
@@ -25,6 +24,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/more-about-us" element={<MoreAboutUs />} /> {/* Corrected this line */}
         <Route
           path="/order-history"
           element={<ProtectedRoute element={<OrderHistory />} />}
