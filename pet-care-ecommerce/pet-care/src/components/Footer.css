@@ -9,6 +9,7 @@
   color: #ff6f61;
   text-decoration: none;
   cursor: pointer;
+  background: transparent;
 }
 
 .footer a:hover,
