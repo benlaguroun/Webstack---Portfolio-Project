@@ -1,8 +1,8 @@
-# Petio E-commerce Website
+# Pet-care E-commerce Website
 
 ## Overview
 
-Petio is a simple e-commerce website built as a final project. It allows users to browse products, add items to a shopping cart, place orders, and view their order history.
+Pet-care is a simple e-commerce website built as a final project. It allows users to browse products, add items to a shopping cart, place orders, and view their order history.
 
 ## Features
 
@@ -23,8 +23,7 @@ Petio is a simple e-commerce website built as a final project. It allows users t
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/petio.git
-    cd petio
+    git clone https://github.com/yourusername/benlaguroun/Webstack---Portfolio-Project.git
     ```
 
 2. Install dependencies:
