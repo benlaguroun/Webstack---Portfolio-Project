@@ -37,7 +37,7 @@ const Cart = () => {
             </div>
           ))}
           <h2>Total: ${getTotalPrice()}</h2>
-          <div className="text-center">
+          <div className="cart-actions text-center">
             <button className="btn btn-secondary mr-2" onClick={clearCart}>Clear Cart</button>
             <button className="btn btn-primary" onClick={handleCheckout}>Place Order</button>
           </div>
