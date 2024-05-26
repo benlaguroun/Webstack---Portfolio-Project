@@ -14,7 +14,7 @@ const AboutSection = () => {
               Our mission is to provide the best quality products for your beloved pets. Whether you have a dog, cat,
               bird, or any other pet, we have something for you. Thank you for choosing us for your pet care needs.
             </p>
-            <Link to="/more-about-us" className="btn btn-primary">Read More</Link> {/* Add the button */} 
+            <Link to="/more-about-us" className="btn btn-primary read-more-btn">Read More</Link> 
           </div>
         </div>
       </div>

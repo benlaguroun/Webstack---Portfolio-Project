@@ -16,6 +16,33 @@
   font-size: 1.2em;
 }
 
-.about-section .btn {
+.about-section .read-more-btn {
   margin-top: 20px;
+  display: inline-block;
+  width: auto; /* Ensures button does not take up full width */
+  padding: 10px 20px; /* Adjust padding for a better look */
+}
+
+.about-section .read-more-btn:hover {
+  background-color: #0056b3; /* Optional: change the color on hover */
+}
+
+.about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-section .col-lg-6 {
+  flex: 1;
+}
+
+.about-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
