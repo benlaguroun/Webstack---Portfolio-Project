@@ -16,18 +16,18 @@ const Footer = () => (
         <div className="col-md-4 col-sm-6">
           <h5>Follow Us</h5>
           <ul className="list-unstyled">
-            <li><button className="link-button" onClick={() => window.location.href='#'}>Facebook</button></li>
-            <li><button className="link-button" onClick={() => window.location.href='#'}>Twitter</button></li>
-            <li><button className="link-button" onClick={() => window.location.href='#'}>Instagram</button></li>
+            <li><a href="https://www.facebook.com" className="link-button">Facebook</a></li>
+            <li><a href="https://www.twitter.com" className="link-button">Twitter</a></li>
+            <li><a href="https://www.instagram.com" className="link-button">Instagram</a></li>
           </ul>
         </div>
         <div className="col-md-4 col-sm-12">
           <h5>Quick Links</h5>
           <ul className="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
       </div>
