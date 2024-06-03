@@ -14,17 +14,18 @@
 
 .about-section p {
   font-size: 1.2em;
+  
 }
 
 .about-section .read-more-btn {
   margin-top: 20px;
   display: inline-block;
-  width: auto; /* Ensures button does not take up full width */
-  padding: 10px 20px; /* Adjust padding for a better look */
+  width: auto; 
+  padding: 10px 20px; 
 }
 
 .about-section .read-more-btn:hover {
-  background-color: #0056b3; /* Optional: change the color on hover */
+  background-color: #0056b3; 
 }
 
 .about-section .container {
