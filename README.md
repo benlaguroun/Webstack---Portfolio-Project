@@ -1,8 +1,8 @@
-# Petio E-commerce Website
+# Pet-care E-commerce Website
 
 ## Project Overview
 
-Petio is a front-end only e-commerce website for pet care products. This project is built using React and simulates backend functionality using mock APIs.
+Pet-care is a front-end only e-commerce website for pet care products. This project is built using React and simulates backend functionality using mock APIs.
 
 ## Features
 
@@ -16,6 +16,6 @@ Petio is a front-end only e-commerce website for pet care products. This project
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/petio-ecommerce.git
-   cd petio-ecommerce
+   git clone https://github.com/benlaguroun/petcare-ecommerce.git
+   cd pet-care-ecommerce
 
